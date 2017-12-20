@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>出团通知书</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?d3bbd81319b522d7e5775a4ebc5d918a";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="top_hj">
+			<div class="header_hj">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo_b.png" /></a>
+				</div>
+				<div class="search">
+					<input type="text" placeholder="请输入目的地、主题或关键字" />
+					<a href="javascript:;"></a>
+				</div>
+				<div class="phone">
+					<span>服务热线</span>
+					<p>400-810-5166</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="nav_hj">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="offered_tour.html">参团游</a>
+					</li>
+					<li>
+						<a href="store_service.html">门店服务</a>
+					</li>
+					<li>
+						<a href="contract.html">合同查询</a>
+					</li>
+					<li>
+						<a href="notice_group.html" class="a_hover">出团通知书</a>
+					</li>
+					<li>
+						<a href="about_us.html">关于我们</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="notice_con_hj">
+			<p>出团通知书</p>
+			<p>以下信息由《出团通知书》提供服务支持</p>
+			<p>您可以通过微信扫描二维码，方便您随时随地查询出团通知书</p>
+			<div class="code">
+				<img src="img/drop_down_icon.png" class="icon"/>
+				<img src="img/notice_code.png" class="code_pic"/>
+				<p>微信扫描二维码</p>
+			</div>
+		</div>
+		<div style="height: 900px;width: 1200px;"></div>
+		<div class="footer_hb">
+			<div class="foot_content">
+				<div class="foot_top">
+					<div class="foot_top_left">
+						<ul>
+							<li>
+								<h4>关于国旅</h4>
+								<a href="cits_introduction.html">国旅介绍</a>
+							</li>
+							<li>
+								<h4>国旅服务</h4>
+								<a href="offered_tour.html">参团游</a>
+							</li>
+							<li>
+								<h4>特色服务</h4>
+							</li>
+							<li>
+								<h4>门店服务</h4>
+								<p>北京国旅已在北京市部署多家销售门店<br />方便您前往就近咨询。</p>	
+								<a href="store_service.html">查看详情></a>
+							</li>
+						</ul>
+					</div>
+					<div class="foot_top_right">
+						<img src="img/details1/WeChat.png"/>
+					</div>
+				</div>
+				<div class="foot_down clear">
+					<div class="foot_down_left left">
+						<img src="img/details1/logo_footer.png"/>
+					</div>
+					<div class="foot_down_centent left">
+						<p>京公网安备110105011423号&nbsp;&nbsp;&nbsp;京ICP证031062号&nbsp;&nbsp;&nbsp;旅行社业务经营许可证编号：L-BJ-CJ00056</p>
+						<p>国家旅游局投诉电话：010-65275315 Copyright©2005-2016 caissa.com.cn. AllRights Reserved</p>
+					</div>
+					<div class="foot_down_right right">
+						<img src="img/details1/symbols1.png"/>
+						<img src="img/details1/symbols2.png"/>
+						<img src="img/details1/symbols3.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function IsPC() {
+			    var userAgentInfo = navigator.userAgent;
+			    var Agents = ["Android", "iPhone",
+			                "SymbianOS", "Windows Phone",
+			                "iPad", "iPod"];
+			    var flag = true;
+			    for (var v = 0; v < Agents.length; v++) {
+			        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+			            flag = false;
+			            break;
+			        }
+			    }
+			    return flag;
+			}
+			if(!IsPC()){
+				$("html").css({"width":"1200px"});
+				$(".footer_hb").css({"position":"fixed","bottom":"0","left":"0"});
+				$(".top_hj").css({"width":"1200px"})
+			}	
+		</script>
+	</body>
+</html>
